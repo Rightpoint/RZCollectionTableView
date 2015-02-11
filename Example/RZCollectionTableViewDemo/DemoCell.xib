@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" contentMode="center" reuseIdentifier="DemoCell" id="gTV-IL-0wX" userLabel="DemoCell" customClass="DemoCell">
+            <rect key="frame" x="0.0" y="0.0" width="413" height="132"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="413" height="132"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default Thumb.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="zwh-eB-TqW" userLabel="default-thumb">
+                        <rect key="frame" x="0.0" y="0.0" width="187" height="132"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" none="YES" image="YES" notEnabled="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="132" id="HuK-53-kMA"/>
+                            <constraint firstAttribute="width" constant="187" id="RUu-he-5FS"/>
+                        </constraints>
+                    </imageView>
+                    <view opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VrC-xw-bQs" userLabel="textContainer">
+                        <rect key="frame" x="187" y="0.0" width="226" height="132"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heading" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pyQ-Mx-g8D">
+                                <rect key="frame" x="18" y="10" width="208" height="21.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="208" id="xqp-tx-i1S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subheading" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGH-Ab-lA0">
+                                <rect key="frame" x="18" y="37" width="208" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" none="YES" notEnabled="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstItem="pyQ-Mx-g8D" firstAttribute="leading" secondItem="VrC-xw-bQs" secondAttribute="leading" constant="18" id="53T-nv-LqV"/>
+                            <constraint firstAttribute="height" constant="132" id="8ge-aj-VlB"/>
+                            <constraint firstItem="pyQ-Mx-g8D" firstAttribute="leading" secondItem="fGH-Ab-lA0" secondAttribute="leading" id="ChL-S9-TDF"/>
+                            <constraint firstItem="fGH-Ab-lA0" firstAttribute="top" secondItem="pyQ-Mx-g8D" secondAttribute="bottom" constant="5.5" id="NL9-KJ-wgl"/>
+                            <constraint firstItem="pyQ-Mx-g8D" firstAttribute="width" secondItem="fGH-Ab-lA0" secondAttribute="width" id="ZHL-xl-JIY"/>
+                            <constraint firstItem="pyQ-Mx-g8D" firstAttribute="top" secondItem="VrC-xw-bQs" secondAttribute="top" constant="10" id="p4Z-c3-GqK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" red="1" green="0.72338079639999997" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="VrC-xw-bQs" secondAttribute="trailing" id="2by-f1-NMm"/>
+                <constraint firstAttribute="bottom" secondItem="zwh-eB-TqW" secondAttribute="bottom" constant="-1" id="8bA-sP-ydu"/>
+                <constraint firstItem="VrC-xw-bQs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="187" id="HVO-5j-44h"/>
+                <constraint firstAttribute="trailing" secondItem="zwh-eB-TqW" secondAttribute="trailing" constant="133" id="JSf-N7-0OS"/>
+                <constraint firstItem="zwh-eB-TqW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="K0I-h0-wh0"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zwh-eB-TqW" secondAttribute="trailing" constant="133" id="Xch-35-WIU"/>
+                <constraint firstAttribute="bottom" secondItem="VrC-xw-bQs" secondAttribute="bottom" id="pDX-Eo-U4A"/>
+                <constraint firstItem="zwh-eB-TqW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qSg-qy-2t1"/>
+            </constraints>
+            <size key="customSize" width="629" height="-15"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="8bA-sP-ydu"/>
+                    <exclude reference="JSf-N7-0OS"/>
+                    <exclude reference="Xch-35-WIU"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="headingLabel" destination="pyQ-Mx-g8D" id="hqU-Jw-3A8"/>
+                <outlet property="imageView" destination="zwh-eB-TqW" id="GF9-pU-imA"/>
+                <outlet property="subheadingLabel" destination="fGH-Ab-lA0" id="wE7-xJ-w6X"/>
+            </connections>
+            <point key="canvasLocation" x="-63.5" y="-206"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Default Thumb.jpg" width="320" height="216"/>
+    </resources>
+</document>

@@ -25,7 +25,7 @@
 #import "RZCollectionTableViewCell.h"
 
 
-//! A UICollection view subclass designed to look and feel like a UITableView
+//! A UICollectionView subclass designed to look and feel like a UITableView
 /*!
     RZCollectionTableView enables editing features similar to a UITableView.
     RZCollectionTableViewLayout can be used with a normal UICollectionView (and vice-versa),
@@ -63,8 +63,12 @@ NS_CLASS_AVAILABLE_IOS(6_0) @interface RZCollectionTableViewLayout : UICollectio
 @property (nonatomic, assign) CGFloat headerHeight;
 
 // Defaults to zero. Can be overridden per-section by delegate.
-// If zero, no header will be requested.
+// If zero, no footer will be requested.
 @property (nonatomic, assign) CGFloat footerHeight;
+
+// Defaults to NO.
+@property (nonatomic, assign) BOOL allowsHeaderViewsToFloat;
+
 
 - (CGRect)rectForSection:(NSInteger)section;
 - (CGRect)rectForHeaderInSection:(NSInteger)section;
@@ -80,6 +84,7 @@ NS_CLASS_AVAILABLE_IOS(6_0) @protocol RZCollectionTableViewLayoutDelegate <UICol
 @optional
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView rzTableLayout:(RZCollectionTableViewLayout *)layout heightForRowAtIndexPath:(NSIndexPath*)indexPath;
+
 - (CGFloat)collectionView:(UICollectionView *)collectionView rzTableLayout:(RZCollectionTableViewLayout *)layout rowSpacingForSection:(NSInteger)section;
 
 // implement this to speed up load times
@@ -87,11 +92,14 @@ NS_CLASS_AVAILABLE_IOS(6_0) @protocol RZCollectionTableViewLayoutDelegate <UICol
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView rzTableLayout:(RZCollectionTableViewLayout *)layout insetForSectionAtIndex:(NSInteger)section; // same signature as UICollectionViewDelegateFlowLayout
 
-// If either of these return zero, no header will be requested for that section.
+// If this returns zero, no header will be requested for that section.
 - (CGFloat)collectionView:(UICollectionView *)collectionView rzTableLayout:(RZCollectionTableViewLayout *)layout heightForHeaderInSection:(NSInteger)section;
+
+// If this returns zero, no footer will be requested for that section.
 - (CGFloat)collectionView:(UICollectionView *)collectionView rzTableLayout:(RZCollectionTableViewLayout *)layout heightForFooterInSection:(NSInteger)section;
 
 - (BOOL)collectionView:(UICollectionView *)collectionView rzTableLayout:(RZCollectionTableViewLayout *)layout editingEnabledForRowAtIndexPath:(NSIndexPath*)indexPath;
+
 - (void)collectionView:(UICollectionView *)collectionView rzTableLayout:(RZCollectionTableViewLayout *)layout editingButtonPressedForIndex:(NSUInteger)buttonIndex forRowAtIndexPath:(NSIndexPath*)indexPath;
 
 @end
