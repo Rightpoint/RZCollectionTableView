@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@class RZCollectionTableViewCellEditingItem;
+@class RZCollectionTableViewCellEditingAction;
 
 //! UICollectionViewCell subclass intended to be used with RZCollectionTableView.
 /*!
@@ -26,11 +26,11 @@
 // NOTE: Using "rz" prefix for the editing interface to avoid potential future conflict with apple interface (if they ever add one).
 // If "editing" interface is added in future for UICollectionViewCell, this will be changed so simply overload that interface.
 
-// Set editing items that will be revealed when panning to the left
-- (void)setRzEditingItems:(NSArray *)editingItems;
+// Set editing action buttons that will be revealed when panning to the left
+- (void)setRzEditingActions:(NSArray *)editingActions;
 
 // Set whether editing enabled. Can be overridden by RZCollectionTableViewLayoutDelegate.
-// Must have at least one editing item for this to succeed.
+// Must have at least one editing action for this to succeed.
 @property (nonatomic, assign) BOOL rzEditingEnabled;
 
 // Defaults to NO
@@ -40,17 +40,17 @@
 @end
 
 
-@interface RZCollectionTableViewCellEditingItem : NSObject
+@interface RZCollectionTableViewCellEditingAction : NSObject
 
 // For now, you get either text or an icon, but not both.
 // In the future might extend this to allow both.
-+ (RZCollectionTableViewCellEditingItem *)itemWithTitle:(NSString *)title
++ (RZCollectionTableViewCellEditingAction *)actionWithTitle:(NSString *)title
                                                    font:(UIFont *)font
                                              titleColor:(UIColor *)titleColor
                                   highlightedTitlecolor:(UIColor *)highlightedTitleColor
                                         backgroundColor:(UIColor *)backgroundColor;
 
-+ (RZCollectionTableViewCellEditingItem *)itemWithIcon:(UIImage *)icon
++ (RZCollectionTableViewCellEditingAction *)actionWithIcon:(UIImage *)icon
                                        highlightedIcon:(UIImage *)highlightedIcon
                                        backgroundColor:(UIColor *)backgroundColor;
 

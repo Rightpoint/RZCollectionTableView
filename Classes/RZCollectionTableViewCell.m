@@ -1,5 +1,5 @@
 //
-//  RZCollectionTableViewCellm
+//  RZCollectionTableViewCell.m
 //
 //  Created by Nick Donaldson on 9/13/13.
 
@@ -16,7 +16,7 @@
 
 @interface RZCollectionTableViewCell () <UIGestureRecognizerDelegate>
 
-@property (nonatomic, strong) NSArray *rzEditingItems;
+@property (nonatomic, strong) NSArray *rzEditingActions;
 
 @property (nonatomic, readwrite, weak) UIView *swipeableContentHostView;
 @property (nonatomic, weak) UIView            *editingButtonsHostView;
@@ -26,7 +26,7 @@
 
 @end
 
-@interface RZCollectionTableViewCellEditingItem ()
+@interface RZCollectionTableViewCellEditingAction ()
 
 @property (nonatomic, copy) NSString  *title;
 @property (nonatomic, strong) UIFont  *titleFont;
@@ -165,25 +165,25 @@
 
     NSMutableArray *newButtons = [NSMutableArray array];
 
-    [self.rzEditingItems enumerateObjectsUsingBlock:^(RZCollectionTableViewCellEditingItem *item, NSUInteger idx, BOOL *stop) {
+    [self.rzEditingActions enumerateObjectsUsingBlock:^(RZCollectionTableViewCellEditingAction *action, NSUInteger idx, BOOL *stop) {
 
         UIButton *button = [[UIButton alloc] initWithFrame:CGRectZero];
         button.translatesAutoresizingMaskIntoConstraints = NO;
         [button setContentHorizontalAlignment:UIControlContentHorizontalAlignmentCenter];
         [button setContentVerticalAlignment:UIControlContentVerticalAlignmentCenter];
-        button.backgroundColor = item.bgColor ? item.bgColor : [UIColor redColor];
+        button.backgroundColor = action.bgColor ? action.bgColor : [UIColor redColor];
 
         [button addTarget:self action:@selector(editingButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
 
-        if ( item.icon ) {
-            [button setImage:item.icon forState:UIControlStateNormal];
-            [button setImage:item.highlightedIcon forState:UIControlStateHighlighted];
+        if ( action.icon ) {
+            [button setImage:action.icon forState:UIControlStateNormal];
+            [button setImage:action.highlightedIcon forState:UIControlStateHighlighted];
         }
         else {
-            [button setTitle:item.title forState:UIControlStateNormal];
-            [button.titleLabel setFont:item.titleFont];
-            [button setTitleColor:item.titleColor forState:UIControlStateNormal];
-            [button setTitleColor:item.titleHighlightColor forState:UIControlStateHighlighted];
+            [button setTitle:action.title forState:UIControlStateNormal];
+            [button.titleLabel setFont:action.titleFont];
+            [button setTitleColor:action.titleColor forState:UIControlStateNormal];
+            [button setTitleColor:action.titleHighlightColor forState:UIControlStateHighlighted];
         }
 
         [self.editingButtonsHostView addSubview:button];
@@ -222,7 +222,7 @@
 
         // update background color of container to match last button
         if ( idx == self.editingButtons.count ) {
-            self.editingButtonsHostView.backgroundColor = item.bgColor;
+            self.editingButtonsHostView.backgroundColor = action.bgColor;
         }
     }];
 
@@ -239,15 +239,15 @@
 
 #pragma mark - Editing
 
-- (void)setRzEditingItems:(NSArray *)editingItems
+- (void)setRzEditingActions:(NSArray *)editingActions
 {
-    _rzEditingItems = editingItems;
+    _rzEditingActions = editingActions;
     [self refreshEditingButtons];
 }
 
 - (void)setRzEditingEnabled:(BOOL)rzEditingEnabled
 {
-    if ( rzEditingEnabled && self.rzEditingItems.count == 0 ) {
+    if ( rzEditingEnabled && self.rzEditingActions.count == 0 ) {
         _rzEditingEnabled = NO;
         NSLog(@"ERROR: Cannot enable editing on RZCollectionTableViewCell with no editing items set");
     }
@@ -268,7 +268,7 @@
 
     self.swipeableContentHostView.userInteractionEnabled = !editing;
 
-    CGFloat stopTarget = editing ? ( -kRZCTEditingButtonWidth * self.rzEditingItems.count ) : 0;
+    CGFloat stopTarget = editing ? ( -kRZCTEditingButtonWidth * self.rzEditingActions.count ) : 0;
     if ( animated ) {
         [UIView animateWithDuration:kRZCTEditStateAnimDuration
                               delay:0.0
@@ -311,7 +311,7 @@
 
     CGPoint           translation      = [panGesture translationInView:self];
     CGAffineTransform currentTransform = self.swipeableContentHostView.transform;
-    CGFloat           maxTransX        = -kRZCTEditingButtonWidth * self.rzEditingItems.count;
+    CGFloat           maxTransX        = -kRZCTEditingButtonWidth * self.rzEditingActions.count;
 
     switch ( panGesture.state ) {
         case UIGestureRecognizerStateBegan:
@@ -369,32 +369,32 @@
 
 @end
 
-@implementation RZCollectionTableViewCellEditingItem
+@implementation RZCollectionTableViewCellEditingAction
 
-+ (RZCollectionTableViewCellEditingItem *)itemWithTitle:(NSString *)title
++ (RZCollectionTableViewCellEditingAction *)actionWithTitle:(NSString *)title
                                                    font:(UIFont *)font
                                              titleColor:(UIColor *)titleColor
                                   highlightedTitlecolor:(UIColor *)highlightedTitleColor
                                         backgroundColor:(UIColor *)backgroundColor
 {
-    RZCollectionTableViewCellEditingItem *item = [RZCollectionTableViewCellEditingItem new];
-    item.title               = title;
-    item.titleFont           = font;
-    item.titleColor          = titleColor;
-    item.titleHighlightColor = highlightedTitleColor ? highlightedTitleColor : titleColor;
-    item.bgColor             = backgroundColor;
-    return item;
+    RZCollectionTableViewCellEditingAction *action = [RZCollectionTableViewCellEditingAction new];
+    action.title               = title;
+    action.titleFont           = font;
+    action.titleColor          = titleColor;
+    action.titleHighlightColor = highlightedTitleColor ? highlightedTitleColor : titleColor;
+    action.bgColor             = backgroundColor;
+    return action;
 }
 
-+ (RZCollectionTableViewCellEditingItem *)itemWithIcon:(UIImage *)icon
++ (RZCollectionTableViewCellEditingAction *)actionWithIcon:(UIImage *)icon
                                        highlightedIcon:(UIImage *)highlightedIcon
                                        backgroundColor:(UIColor *)backgroundColor
 {
-    RZCollectionTableViewCellEditingItem *item = [RZCollectionTableViewCellEditingItem new];
-    item.icon            = icon;
-    item.highlightedIcon = highlightedIcon ? highlightedIcon : icon;
-    item.bgColor         = backgroundColor;
-    return item;
+    RZCollectionTableViewCellEditingAction *action = [RZCollectionTableViewCellEditingAction new];
+    action.icon            = icon;
+    action.highlightedIcon = highlightedIcon ? highlightedIcon : icon;
+    action.bgColor         = backgroundColor;
+    return action;
 }
 
 

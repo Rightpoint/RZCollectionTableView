@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		733B8F4D1A7C27F200164062 /* Table.plist in Resources */ = {isa = PBXBuildFile; fileRef = 733B8F4C1A7C27F200164062 /* Table.plist */; };
+		733B8F501A7C29EF00164062 /* UICollectionReusableView+ReuseHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 733B8F4F1A7C29EF00164062 /* UICollectionReusableView+ReuseHelpers.m */; };
+		733B8F571A7C36CD00164062 /* Default Thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 733B8F561A7C36CD00164062 /* Default Thumb.jpg */; };
+		733B8F781A8084A600164062 /* DemoHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 733B8F761A8084A600164062 /* DemoHeaderView.m */; };
+		733B8F791A8084A600164062 /* DemoHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 733B8F771A8084A600164062 /* DemoHeaderView.xib */; };
+		733B8F7D1A80876900164062 /* DemoFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 733B8F7B1A80876900164062 /* DemoFooterView.m */; };
+		733B8F7E1A80876900164062 /* DemoFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 733B8F7C1A80876900164062 /* DemoFooterView.xib */; };
+		733B8F811A81B89E00164062 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 733B8F801A81B89E00164062 /* DetailViewController.m */; };
+		733B8FA21A85421000164062 /* RZCollectionTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 733B8F9F1A85421000164062 /* RZCollectionTableView.m */; };
+		733B8FA31A85421000164062 /* RZCollectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 733B8FA11A85421000164062 /* RZCollectionTableViewCell.m */; };
+		73BA54F61A76C16E000A298A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73BA54F51A76C16E000A298A /* main.m */; };
+		73BA54F91A76C16E000A298A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73BA54F81A76C16E000A298A /* AppDelegate.m */; };
+		73BA54FC1A76C16E000A298A /* CollectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73BA54FB1A76C16E000A298A /* CollectionTableViewController.m */; };
+		73BA54FF1A76C16E000A298A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73BA54FD1A76C16E000A298A /* Main.storyboard */; };
+		73BA55011A76C16E000A298A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73BA55001A76C16E000A298A /* Images.xcassets */; };
+		73BA55041A76C16E000A298A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73BA55021A76C16E000A298A /* LaunchScreen.xib */; };
+		73BA55101A76C16E000A298A /* RZCollectionTableViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73BA550F1A76C16E000A298A /* RZCollectionTableViewDemoTests.m */; };
+		73BCF8A81A7ADF1400791219 /* DemoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 73BCF8A61A7ADF1400791219 /* DemoCell.m */; };
+		73BCF8A91A7ADF1400791219 /* DemoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73BCF8A71A7ADF1400791219 /* DemoCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		73BA550A1A76C16E000A298A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73BA54E81A76C16E000A298A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73BA54EF1A76C16E000A298A;
+			remoteInfo = RZCollectionTableViewDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		733B8F4C1A7C27F200164062 /* Table.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Table.plist; sourceTree = "<group>"; };
+		733B8F4E1A7C29EF00164062 /* UICollectionReusableView+ReuseHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionReusableView+ReuseHelpers.h"; sourceTree = "<group>"; };
+		733B8F4F1A7C29EF00164062 /* UICollectionReusableView+ReuseHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionReusableView+ReuseHelpers.m"; sourceTree = "<group>"; };
+		733B8F561A7C36CD00164062 /* Default Thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Default Thumb.jpg"; sourceTree = "<group>"; };
+		733B8F751A8084A600164062 /* DemoHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoHeaderView.h; sourceTree = "<group>"; };
+		733B8F761A8084A600164062 /* DemoHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoHeaderView.m; sourceTree = "<group>"; };
+		733B8F771A8084A600164062 /* DemoHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoHeaderView.xib; sourceTree = "<group>"; };
+		733B8F7A1A80876900164062 /* DemoFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoFooterView.h; sourceTree = "<group>"; };
+		733B8F7B1A80876900164062 /* DemoFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoFooterView.m; sourceTree = "<group>"; };
+		733B8F7C1A80876900164062 /* DemoFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoFooterView.xib; sourceTree = "<group>"; };
+		733B8F7F1A81B89E00164062 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		733B8F801A81B89E00164062 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		733B8F9D1A85421000164062 /* RZCollectionTableView_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RZCollectionTableView_Private.h; path = ../../Classes/RZCollectionTableView_Private.h; sourceTree = "<group>"; };
+		733B8F9E1A85421000164062 /* RZCollectionTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RZCollectionTableView.h; path = ../../Classes/RZCollectionTableView.h; sourceTree = "<group>"; };
+		733B8F9F1A85421000164062 /* RZCollectionTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RZCollectionTableView.m; path = ../../Classes/RZCollectionTableView.m; sourceTree = "<group>"; };
+		733B8FA01A85421000164062 /* RZCollectionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RZCollectionTableViewCell.h; path = ../../Classes/RZCollectionTableViewCell.h; sourceTree = "<group>"; };
+		733B8FA11A85421000164062 /* RZCollectionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RZCollectionTableViewCell.m; path = ../../Classes/RZCollectionTableViewCell.m; sourceTree = "<group>"; };
+		73BA54F01A76C16E000A298A /* RZCollectionTableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RZCollectionTableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		73BA54F41A76C16E000A298A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73BA54F51A76C16E000A298A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		73BA54F71A76C16E000A298A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		73BA54F81A76C16E000A298A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		73BA54FA1A76C16E000A298A /* CollectionTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionTableViewController.h; sourceTree = "<group>"; };
+		73BA54FB1A76C16E000A298A /* CollectionTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionTableViewController.m; sourceTree = "<group>"; };
+		73BA54FE1A76C16E000A298A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		73BA55001A76C16E000A298A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		73BA55031A76C16E000A298A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		73BA55091A76C16E000A298A /* RZCollectionTableViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RZCollectionTableViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		73BA550E1A76C16E000A298A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73BA550F1A76C16E000A298A /* RZCollectionTableViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RZCollectionTableViewDemoTests.m; sourceTree = "<group>"; };
+		73BCF8A51A7ADF1400791219 /* DemoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoCell.h; sourceTree = "<group>"; };
+		73BCF8A61A7ADF1400791219 /* DemoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoCell.m; sourceTree = "<group>"; };
+		73BCF8A71A7ADF1400791219 /* DemoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		73BA54ED1A76C16E000A298A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73BA55061A76C16E000A298A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		733B8F8E1A852A8500164062 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				733B8F9D1A85421000164062 /* RZCollectionTableView_Private.h */,
+				733B8F9E1A85421000164062 /* RZCollectionTableView.h */,
+				733B8F9F1A85421000164062 /* RZCollectionTableView.m */,
+				733B8FA01A85421000164062 /* RZCollectionTableViewCell.h */,
+				733B8FA11A85421000164062 /* RZCollectionTableViewCell.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		73BA54E71A76C16E000A298A = {
+			isa = PBXGroup;
+			children = (
+				73BA54F21A76C16E000A298A /* RZCollectionTableViewDemo */,
+				73BA550C1A76C16E000A298A /* RZCollectionTableViewDemoTests */,
+				73BA54F11A76C16E000A298A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		73BA54F11A76C16E000A298A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				73BA54F01A76C16E000A298A /* RZCollectionTableViewDemo.app */,
+				73BA55091A76C16E000A298A /* RZCollectionTableViewDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		73BA54F21A76C16E000A298A /* RZCollectionTableViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				733B8F8E1A852A8500164062 /* Classes */,
+				73BA54F71A76C16E000A298A /* AppDelegate.h */,
+				73BA54F81A76C16E000A298A /* AppDelegate.m */,
+				733B8F4E1A7C29EF00164062 /* UICollectionReusableView+ReuseHelpers.h */,
+				733B8F4F1A7C29EF00164062 /* UICollectionReusableView+ReuseHelpers.m */,
+				733B8F561A7C36CD00164062 /* Default Thumb.jpg */,
+				73BCF8A51A7ADF1400791219 /* DemoCell.h */,
+				73BCF8A61A7ADF1400791219 /* DemoCell.m */,
+				73BCF8A71A7ADF1400791219 /* DemoCell.xib */,
+				733B8F751A8084A600164062 /* DemoHeaderView.h */,
+				733B8F761A8084A600164062 /* DemoHeaderView.m */,
+				733B8F771A8084A600164062 /* DemoHeaderView.xib */,
+				733B8F7A1A80876900164062 /* DemoFooterView.h */,
+				733B8F7B1A80876900164062 /* DemoFooterView.m */,
+				733B8F7C1A80876900164062 /* DemoFooterView.xib */,
+				733B8F7F1A81B89E00164062 /* DetailViewController.h */,
+				733B8F801A81B89E00164062 /* DetailViewController.m */,
+				73BA54FA1A76C16E000A298A /* CollectionTableViewController.h */,
+				73BA54FB1A76C16E000A298A /* CollectionTableViewController.m */,
+				733B8F4C1A7C27F200164062 /* Table.plist */,
+				73BA54FD1A76C16E000A298A /* Main.storyboard */,
+				73BA55001A76C16E000A298A /* Images.xcassets */,
+				73BA55021A76C16E000A298A /* LaunchScreen.xib */,
+				73BA54F31A76C16E000A298A /* Supporting Files */,
+			);
+			path = RZCollectionTableViewDemo;
+			sourceTree = "<group>";
+		};
+		73BA54F31A76C16E000A298A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				73BA54F41A76C16E000A298A /* Info.plist */,
+				73BA54F51A76C16E000A298A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		73BA550C1A76C16E000A298A /* RZCollectionTableViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				73BA550F1A76C16E000A298A /* RZCollectionTableViewDemoTests.m */,
+				73BA550D1A76C16E000A298A /* Supporting Files */,
+			);
+			path = RZCollectionTableViewDemoTests;
+			sourceTree = "<group>";
+		};
+		73BA550D1A76C16E000A298A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				73BA550E1A76C16E000A298A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		73BA54EF1A76C16E000A298A /* RZCollectionTableViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73BA55131A76C16E000A298A /* Build configuration list for PBXNativeTarget "RZCollectionTableViewDemo" */;
+			buildPhases = (
+				73BA54EC1A76C16E000A298A /* Sources */,
+				73BA54ED1A76C16E000A298A /* Frameworks */,
+				73BA54EE1A76C16E000A298A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RZCollectionTableViewDemo;
+			productName = RZCollectionTableViewDemo;
+			productReference = 73BA54F01A76C16E000A298A /* RZCollectionTableViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		73BA55081A76C16E000A298A /* RZCollectionTableViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73BA55161A76C16E000A298A /* Build configuration list for PBXNativeTarget "RZCollectionTableViewDemoTests" */;
+			buildPhases = (
+				73BA55051A76C16E000A298A /* Sources */,
+				73BA55061A76C16E000A298A /* Frameworks */,
+				73BA55071A76C16E000A298A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73BA550B1A76C16E000A298A /* PBXTargetDependency */,
+			);
+			name = RZCollectionTableViewDemoTests;
+			productName = RZCollectionTableViewDemoTests;
+			productReference = 73BA55091A76C16E000A298A /* RZCollectionTableViewDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		73BA54E81A76C16E000A298A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Raizlabs;
+				TargetAttributes = {
+					73BA54EF1A76C16E000A298A = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					73BA55081A76C16E000A298A = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 73BA54EF1A76C16E000A298A;
+					};
+				};
+			};
+			buildConfigurationList = 73BA54EB1A76C16E000A298A /* Build configuration list for PBXProject "RZCollectionTableViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 73BA54E71A76C16E000A298A;
+			productRefGroup = 73BA54F11A76C16E000A298A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				73BA54EF1A76C16E000A298A /* RZCollectionTableViewDemo */,
+				73BA55081A76C16E000A298A /* RZCollectionTableViewDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		73BA54EE1A76C16E000A298A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				733B8F791A8084A600164062 /* DemoHeaderView.xib in Resources */,
+				733B8F7E1A80876900164062 /* DemoFooterView.xib in Resources */,
+				73BA54FF1A76C16E000A298A /* Main.storyboard in Resources */,
+				733B8F4D1A7C27F200164062 /* Table.plist in Resources */,
+				73BA55041A76C16E000A298A /* LaunchScreen.xib in Resources */,
+				73BCF8A91A7ADF1400791219 /* DemoCell.xib in Resources */,
+				733B8F571A7C36CD00164062 /* Default Thumb.jpg in Resources */,
+				73BA55011A76C16E000A298A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73BA55071A76C16E000A298A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		73BA54EC1A76C16E000A298A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				733B8F501A7C29EF00164062 /* UICollectionReusableView+ReuseHelpers.m in Sources */,
+				733B8F781A8084A600164062 /* DemoHeaderView.m in Sources */,
+				73BA54FC1A76C16E000A298A /* CollectionTableViewController.m in Sources */,
+				733B8FA21A85421000164062 /* RZCollectionTableView.m in Sources */,
+				73BA54F91A76C16E000A298A /* AppDelegate.m in Sources */,
+				733B8FA31A85421000164062 /* RZCollectionTableViewCell.m in Sources */,
+				73BCF8A81A7ADF1400791219 /* DemoCell.m in Sources */,
+				733B8F811A81B89E00164062 /* DetailViewController.m in Sources */,
+				733B8F7D1A80876900164062 /* DemoFooterView.m in Sources */,
+				73BA54F61A76C16E000A298A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73BA55051A76C16E000A298A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73BA55101A76C16E000A298A /* RZCollectionTableViewDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		73BA550B1A76C16E000A298A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73BA54EF1A76C16E000A298A /* RZCollectionTableViewDemo */;
+			targetProxy = 73BA550A1A76C16E000A298A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		73BA54FD1A76C16E000A298A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				73BA54FE1A76C16E000A298A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		73BA55021A76C16E000A298A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				73BA55031A76C16E000A298A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		73BA55111A76C16E000A298A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		73BA55121A76C16E000A298A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		73BA55141A76C16E000A298A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RZCollectionTableViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		73BA55151A76C16E000A298A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RZCollectionTableViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		73BA55171A76C16E000A298A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RZCollectionTableViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RZCollectionTableViewDemo.app/RZCollectionTableViewDemo";
+			};
+			name = Debug;
+		};
+		73BA55181A76C16E000A298A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RZCollectionTableViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RZCollectionTableViewDemo.app/RZCollectionTableViewDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		73BA54EB1A76C16E000A298A /* Build configuration list for PBXProject "RZCollectionTableViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73BA55111A76C16E000A298A /* Debug */,
+				73BA55121A76C16E000A298A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73BA55131A76C16E000A298A /* Build configuration list for PBXNativeTarget "RZCollectionTableViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73BA55141A76C16E000A298A /* Debug */,
+				73BA55151A76C16E000A298A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73BA55161A76C16E000A298A /* Build configuration list for PBXNativeTarget "RZCollectionTableViewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73BA55171A76C16E000A298A /* Debug */,
+				73BA55181A76C16E000A298A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 73BA54E81A76C16E000A298A /* Project object */;
+}
